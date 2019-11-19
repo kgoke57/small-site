@@ -1,0 +1,490 @@
+
+/* for all of the sites*/
+body {
+    margin: 0 auto;
+    background-color: #672e45;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.foot_01{
+    background-color: #6399ae;
+    width: 855px;
+    height: 100px;
+    bottom: 0;
+    font-family: bc-alphapipe, sans-serif;
+    color: white;
+    margin-left: 365px;
+    margin-top: 700px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.foot_02{
+    background-color: #6399ae;
+    width: 855px;
+    height: 100px;
+    bottom: 0;
+    font-family: bc-alphapipe, sans-serif;
+    color: white;
+    margin-left: 365px;
+    margin-top: 800px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.foot_03{
+    background-color: #6399ae;
+    width: 855px;
+    height: 100px;
+    bottom: 0;
+    font-family: bc-alphapipe, sans-serif;
+    color: white;
+    margin-left: 365px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.foot_04{
+    background-color: #6399ae;
+    width: 855px;
+    height: 100px;
+    bottom: 0;
+    font-family: bc-alphapipe, sans-serif;
+    color: white;
+    margin-left: 365px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.soc_icon{
+    text-decoration: none;
+    color: #672e45;
+    text-align: center;
+    
+}.clickhere02{
+    text-decoration: none;
+    color: #672e45;
+}
+/*--navbar----------------------------*/
+.navbar {
+    display: flex;
+    padding: 7px;
+    font-family: bc-alphapipe, sans-serif;
+    color: white;
+    position: fixed;
+    width: 145px;
+    height: 1000px;
+    top: 0;
+    background-color: white;
+}
+
+.navbar_items,
+  .navbar {
+    flex-direction: column;
+  }
+.navbar a {
+    color: black;
+    font-size: 1.2em; 
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: gray;
+}
+.navbar_link-brand {
+    font-size: 16px;
+}
+.navbar_link {
+    padding: 8px 20px;
+}
+.navbar .active {
+    color: aqua;
+}
+.navbar_items {
+    margin-top: 100px;
+    font-size: 16px;
+    display:none;
+}
+.navbar_items-right {
+    margin-left:0;
+}
+.navbar_link-toggle {
+    display: none;
+    font-size: 1.4em;
+    left: 20px;
+}
+.navbar_toggleShow {
+    display: flex;
+  }
+.navbar_link-toggle {
+    right: 10%;
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+} 
+
+/*index page*/
+
+.bg_imgs{
+    width: 100%;
+    position: absolute;
+    z-index: -3;
+    margin: 0 auto;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: -1;
+}
+
+span.circle {
+    float: left;
+    z-index: -2;
+}
+
+.big_title{
+    font-family: bc-alphapipe, sans-serif;
+    font-size: 80px;
+    padding: 10px;
+    background-color: #6399ae;
+    margin-left: 145px;
+    color:white;
+}
+
+/*keyframe animation ----------*/
+
+@keyframes slidy {
+0% { left: 0%; }
+12% { left: -100%; }
+24% { left: -200%; }
+36% { left: -300%; }
+48% { left: -400%; }
+60% { left: -300%; }
+72% { left: -200%; }
+84% { left: -100%; }
+96% { left: 0%; }   
+}
+
+* {
+  box-sizing: border-box;
+}
+figure { 
+    margin: 0; 
+    background: #101010;
+    font-family: Istok Web, sans-serif;
+    font-weight: 100;
+}
+div#captioned-gallery { 
+    width: 1000px; 
+    overflow: hidden; 
+    margin: 0 auto;
+    z-index: -100;
+    position: absolute;
+}
+figure.slider { 
+    position: relative; 
+    width: 500%;
+    font-size: 0; 
+    animation: 40s slidy infinite; 
+}
+figure.slider figure { 
+    width: 20%; 
+    height: auto;
+    display: inline-block;  
+    position: inherit; 
+}
+figure.slider img { 
+    width: 1000px; 
+    height: 700px;
+}
+
+/*bio page--------------------------*/
+
+.grid_container01{
+    width: 1000px;
+    color: white;
+    margin-left: 150px
+}
+
+.col_two{
+    max-width: 600px;
+    float: left;
+    max-height: 800px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.box_scroll { 
+    width: 500px;
+    height: 200px;
+    overflow: scroll;
+    padding-left: 20px;
+    padding-right:20px;
+    margin: 20px;
+}
+
+.box_scroll p {
+    font-family: bc-alphapipe, sans-serif;
+}
+
+.photos{
+    margin-top: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.bar2{
+    width: 900px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 370px;
+    opacity: 0.3;
+}
+.bar3{
+    width: 900px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 610px;
+    opacity: 0.3;
+}
+.col_two:hover .photos{
+    opacity: 0.5;
+}
+
+.col_two:hover .middle {
+  opacity: 1;
+}
+
+.col_two:hover .photos{
+    opacity: 0.5;
+}
+
+.col_two:hover .middle2 {
+  opacity: 1;
+}
+
+.col_two:hover .photos{
+    opacity: 0.5;
+}
+
+.col_two:hover .middle3 {
+  opacity: 1;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 490px;
+  left: 500px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle3 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 730px;
+  left: 500px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.name {
+  background-color: #6399ae;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: bc-alphapipe, sans-serif;
+}
+
+.bio_heading{
+    font-size: 50px;
+    font-family: bc-alphapipe, sans-serif;
+    margin-left: 30px
+}
+
+/*music page-------------------------*/
+
+h1{
+    color: white;
+    margin-left: 150px;
+    font-family: bc-alphapipe, sans-serif;
+    
+}
+.grid_container_01{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 150px;
+    position: relative;
+}
+
+.image{
+    margin: 30px;
+    z-index: -1
+}
+
+.wrapper.image:hover {
+    opacity: 0.5;
+    color: #6399ae;
+}
+
+.play{
+    color: white;
+    z-index: 10;
+    position: absolute;
+    transition: .5s ease;
+    opacity: 1;
+    width: 100px;
+    margin-left: 130px;
+    top: 50%;
+    left 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);  
+}
+.wrapper {
+    width: 200px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    
+}
+
+.mus_heading{
+    font-size: 50px;
+    font-family: bc-alphapipe, sans-serif;
+    margin-left: 30px;
+}
+
+.wrapper:hover .play{
+    opacity: 0;
+}
+
+.des{
+    font-family: bc-alphapipe, sans-serif;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*tours page-------------------------*/
+
+p{
+    color: white;
+    line-height: 30px;
+    font-family: bc-alphapipe, sans-serif;
+}
+.october, .november, .december, .day_of_week{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin-left: 150px;
+    font-family: bc-alphapipe, sans-serif;
+    width: 600px;
+}
+
+.october button:first-child{
+    grid-column: 3;
+}
+
+.november button:first-child{
+    grid-column: 6;
+}
+
+.december button:first-child{
+    grid-column: 1;
+}
+
+.october, .november, .december{
+    padding: 30px;
+    margin-top: -50px;
+}
+.day_of_week{
+    color: white;
+    font-family: bc-alphapipe, sans-serif;
+    text-align: center;
+    padding: 30px;
+    margin-left: 130px;
+}
+
+h3{
+    margin-left: 180px;
+    color: white;
+    font-family: bc-alphapipe, sans-serif;
+    font-size: 20px;
+}
+
+.callout{
+    color: white;
+    background-color: #6399ae;
+}
+
+.december{
+    margin-bottom: 50px;
+}
+
+.bar5{
+    width: 855px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 610px;
+    opacity: 0.3;
+    margin-left: 140px;
+}
+
+.bar4{
+    width: 855px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 360px;
+    opacity: 0;
+    margin-left: 140px;
+}
+
+.tournames{
+    margin-top: 50px;
+    margin-left: 180px;
+    margin-bottom: 50px;
+}
+
+.clickinfo{
+    margin-left: 180px;
+}
+
+.clickhere{
+    text-decoration: none;
+    color:#6399ae;
+}
+
+.dateclick{
+    text-decoration: none;
+    color:#672e45;
+}
+
